@@ -1,0 +1,12 @@
+{
+  "name": "@minierpengui/demo",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev"
+  },
+  "dependencies": {
+    "@minierpengui/ui": "workspace:^"
+  },
+  "devDependencies": {
+  }
+}

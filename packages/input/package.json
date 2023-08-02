@@ -18,17 +18,17 @@
     "url": "https://github.com/miniliupeng/minierpeng-ui/issues"
   },
   "scripts": {
-    "build": "echo build",
+    "build": "vite build",
     "test": "echo test"
   },
-  "main": "",
-  "module": "",
-  "types": "",
+  "main": "./dist/minierpengui-input.umd.js",
+  "module": "./dist/minierpengui-input.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "",
-      "module": "",
-      "types": ""
+      "require": "./dist/minierpengui-input.umd.js",
+      "module": "./dist/minierpengui-input.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
@@ -38,6 +38,7 @@
   "peerDependencies": {
     "vue": ">=3.0.0"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "@minierpengui/shared": "workspace:^"
+  }
 }
