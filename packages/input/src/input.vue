@@ -1,26 +1,31 @@
 <script setup lang="ts">
-import { hello } from '@minierpengui/shared'
+import { hello } from '@minierpengui/shared';
 
 withDefaults(
   defineProps<{
-    modelValue?: string
+    modelValue?: string;
   }>(),
   {
-    modelValue: ''
-  }
-)
+    modelValue: '',
+  },
+);
 
 const emit = defineEmits<{
-  (event: 'update:modelValue', val: string): void
-}>()
+  (event: 'update:modelValue', val: string): void;
+}>();
 
 function inputHandler(e: any) {
-  const value: string = e.target.value
-  emit('update:modelValue', value)
-  hello(value)
+  const { value } = e.target;
+  emit('update:modelValue', value);
+  hello(value);
 }
 </script>
 
 <template>
-  <input class="openx-input" type="text" :value="modelValue" @input="inputHandler" />
+  <input
+    class="openx-input"
+    type="text"
+    :value="modelValue"
+    @input="inputHandler"
+  >
 </template>
