@@ -62,6 +62,8 @@ module.exports = defineConfig({
 
     // 换行符不作约束
     'linebreak-style': 'off',
+
+    '@typescript-eslint/no-use-before-define': 'off',
   },
 
   // 文件级别的重写
@@ -73,6 +75,7 @@ module.exports = defineConfig({
         '**/vitest.config.*',
       ],
       rules: {
+        'import/no-relative-packages': 'off',
         'no-console': 'off',
       },
     },

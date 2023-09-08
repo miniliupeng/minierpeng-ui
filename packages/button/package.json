@@ -23,12 +23,12 @@
   },
   "main": "./dist/minierpengui-button.umd.js",
   "module": "./dist/minierpengui-button.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/minierpengui-button.umd.js",
-      "module": "./dist/minierpengui-button.mjs",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/minierpengui-button.mjs",
+      "types": "./dist/src/index.d.ts"
     }
   },
   "files": [

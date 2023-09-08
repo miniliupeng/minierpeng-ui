@@ -1,4 +1,8 @@
 // scripts/dts-mv.ts
+// 打包体系 已经集成了移动 d.ts 产物，可以去掉了
+// "mv-type": "tsx ./scripts/dts-mv.ts",
+// "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build && pnpm run mv-type"
+
 import { join } from 'node:path';
 import { readdir, cp } from 'node:fs/promises';
 

@@ -1,0 +1,55 @@
+{
+  "name": "@minierpengui/build",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "vue",
+    "ui",
+    "component library"
+  ],
+  "author": "minierpeng",
+  "license": "MIT",
+  "homepage": "https://github.com/miniliupeng/minierpeng-ui/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miniliupeng/minierpeng-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miniliupeng/minierpeng-ui/issues"
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "echo test"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "vite": ">=3.0.0",
+    "vue": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@rollup/plugin-replace": "^5.0.2",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "type-fest": "^4.3.1",
+    "typescript": "^5.1.6",
+    "vite-plugin-inspect": "^0.7.38"
+  },
+  "main": "./dist/minierpengui-build.umd.js",
+  "module": "./dist/minierpengui-build.mjs",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/minierpengui-build.umd.js",
+      "import": "./dist/minierpengui-build.mjs",
+      "types": "./dist/src/index.d.ts"
+    }
+  }
+}
